@@ -30,6 +30,15 @@ if (result.error) {
   console.log('credentials.env =', result.parsed)
 }
 
+// Scalingo MongoDB URL -> extract credentials
+if (process.env.SCALINGO_MONGO_URL) {
+  const mongoUrl = new URL(process.env.SCALINGO_MONGO_URL);
+  process.env.MONGO_USERNAME = mongoUrl.username;
+  process.env.MONGO_PASSWORD = mongoUrl.password;
+  process.env.MONGO_HOSTS = mongoUrl.host;
+  process.env.MONGO_CERTIFICATE_BASE64 = ''; // Scalingo ne fournit pas de certificat
+}
+
 // Cloud Foundry -----------------------------------------------------------
 // Run in Cloud Foundry - Read VCAP variables
 // if (!appEnv.isLocal) {
