@@ -59,7 +59,7 @@ MongoClient.connect(uri, {
   resolve();
 });
 ```
-📸 [SCREEN DU CODE OU DE L’ENVIRONMENT VARIABLES]
+
 ### 5. Déploiement
 
 Une fois les modifications faites :
@@ -69,7 +69,7 @@ Commit & push sur GitHub
 Scalingo détecte les changements et redéploie automatiquement
 
 ![Logs](./images/screen-logs-scalingo.png) 
-### ✅ Résultat
+### Résultat
 
  - L'application fonctionne avec MongoDB comme base de données persistante.
  - Les tâches sont conservées même après un redéploiement de l'app.
