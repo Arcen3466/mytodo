@@ -67,7 +67,7 @@ Watch this 6 mins <a href="https://youtu.be/XVVb-aLw9ow" target=”_blank”>You
     > If you have a free cluster, the url will be using the IP address of a worker node.
     > If you have a paid cluster, the url will be a domain name finishing with *.appdomain.cloud.
 
-Congratulations! Your app is up and running in the cluster.
+Congratulations! Your app is up and running in the cluster
 
 
 # Step by step Deployment
