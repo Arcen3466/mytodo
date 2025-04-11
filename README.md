@@ -66,8 +66,6 @@ Une fois les modifications faites :
 
 Commit & push sur GitHub
 
-Scalingo détecte les changements et redéploie automatiquement
-
 ![Logs](./images/screen-logs-scalingo.png) 
 ### Résultat
 
